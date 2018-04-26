@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripTracker - Log In</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+</head>
+<body> 
+
+    <img id="splashLogo" src="images/icons/logo.png" alt="trip tracker logo">
+
+    <div id="loginWrapper"> 
+
+        <div id="login">
+            <input type="text" name="userLogin" id="userLogin" placeholder="Username">
+            <input type="password" name="userPassword" id="userPassword" placeholder="Password">
+            <input type="button" value="Log In" id="loginBtn">
+            <p id="swapRegister">Don't have an account?<br>Click to Register.</p>
+        </div>
+
+        <div id="register"> 
+            <input type="text" name="registerLogin" id="registerLogin" placeholder="Username">
+            <input type="password" name="registerPassword" id="registerPassword" placeholder="Password">
+            <input type="button" value="Register" id="registerBtn">
+            <p id="swapLogin">Already have an account?<br>Click to Log In.</p>
+        </div>
+
+        
+    </div>
+
+    <p id="errorMessage"></p>
+
+
+    <script src="cordova.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="scripts/firebaseConfig.js"></script>
+    <script src="scripts/login.js"></script>
+</body>
+</html>

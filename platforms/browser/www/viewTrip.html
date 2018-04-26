@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripTracker - View Trip</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="mapContainer">
+    </div>
+
+    <div id="displayWrap">
+        <div id="userIn">
+            <input id="pointName" type="text" placeholder="Add a Point Name" maxlength="20">
+            <input id="pointDesc" type="text" placeholder="Add a Description" maxlength="125">
+            <input id="addPointBtn" type="button" value="Add Point">
+        </div>
+
+        <div id="userOut">
+            <h3 id="pointNameInfo"></h3>
+            <p id="pointDescInfo">Click a point on the map for details.</p>
+        </div>
+    </div>
+
+    <input id="homeBtn" type="button" value="Home">
+
+    <p id="errorMessage"></p>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="scripts/firebaseConfig.js"></script>
+    <script src="scripts/viewTrip.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9eMFCtxWAjPvstc8xqQUxH-gjJHd4sug&callback=initMap"></script>
+</body>
+
+</html>

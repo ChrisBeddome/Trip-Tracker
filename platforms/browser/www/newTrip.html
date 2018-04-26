@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <title>TripTracker - New Trip</title>
+</head>
+<body>
+    <h3>Enter a name for your new trip:</h3>
+    <input id="newTripName" type="text" maxlength="50" placeholder="New Trip Name">
+    <input id="newTripBtn" type="button" value="Start New Trip">
+    <input id="homeBtn" type="button" value="Home">
+     
+    <p id="errorMessage"></p>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="scripts/firebaseConfig.js"></script>
+    <script src="scripts/newTrip.js"></script>
+</body>
+</html>
